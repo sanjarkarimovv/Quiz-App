@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:paddingHorizontal="12dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginTop="32dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="8dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cv_timer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:theme="@style/Theme.MaterialComponents.Light"
+                app:cardBackgroundColor="@android:color/holo_green_dark"
+                app:cardCornerRadius="0dp"
+                app:shapeAppearanceOverlay="@style/CustomCardCorners">
+
+                <TextView
+                    android:id="@id/tv_timer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:text="00:00" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:id="@+id/tv_quiz"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginVertical="16dp"
+                android:layout_toStartOf="@+id/cv_timer"
+                android:gravity="center"
+                android:textSize="19sp"
+                tools:text="lfjsaklfjksjljfkljaskfljalskfalfjaklfjsklajfsafjfsafjasljflasfjasklfjkasfjlsak" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/tv_timer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:textSize="19sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_answer_1"
+        android:layout_width="200dp"
+        android:layout_height="56dp"
+        android:background="@android:color/white"
+        android:layout_marginTop="48dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_answer_2"
+        android:layout_width="200dp"
+        android:layout_height="56dp"
+        android:background="@android:color/white"
+        android:layout_marginTop="8dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_answer_3"
+        android:layout_width="200dp"
+        android:layout_height="56dp"
+        android:background="@android:color/white"
+        android:layout_marginTop="8dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_answer_4"
+        android:layout_width="200dp"
+        android:background="@android:color/white"
+        android:layout_height="56dp"
+        android:layout_marginTop="8dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="24dp"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_finish"
+                android:layout_width="200dp"
+                android:layout_height="56dp"
+                android:layout_marginTop="8dp"
+                android:text="finish" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_next"
+                android:layout_width="200dp"
+                android:layout_height="56dp"
+                android:layout_marginTop="8dp"
+                android:text="next" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>
